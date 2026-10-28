@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Mi Comercio{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/pag_pp.css') }}">
+    
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        footer {
+            flex-shrink: 0;
+            background-color: #05435e;
+            text-align: center;
+            padding: 18px 10px;
+            width: 100%;
+            box-sizing: border-box;
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        footer p {
+            margin: 5px 0;
+            color: #ffffff;
+            font-size: 0.95rem;
+            font-family: 'Calibri', Arial, sans-serif;
+        }
+
+        footer a.links {
+            color: #90e0ef;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 500;
+        }
+
+        footer a.links:hover {
+            text-decoration: underline;
+            color: #ffffff;
+        }
+    </style>
+
+    {% block styles %}{% endblock %}
+</head>
+<body>
+
+    <header>
+        <h1>El Mejor Negocio de Computación</h1>
+        <nav>
+            <a href="{{ url_for('index') }}">Inicio</a>
+            {% if session.get('user_id') %}
+                <span style="color: white; font-weight: bold;">Hola, {{ session.get('user_name') }}</span>
+                <a href="{{ url_for('logout') }}">Cerrar Sesión</a>
+            {% else %}
+                <a href="{{ url_for('login') }}">Iniciar Sesión</a>
+                <a href="{{ url_for('registro') }}">Registrarse</a>
+            {% endif %}
+        </nav>
+    </header>
+
+    <main>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            <div style="text-align: center; padding: 10px;">
+              {% for category, message in messages %}
+                {% if category == 'danger' %}
+                  <p style="color: #b3261e; font-weight: bold; font-size: 1.1rem; margin: 0;">{{ message }}</p>
+                {% else %}
+                  <p style="color: #2e7d32; font-weight: bold; font-size: 1.1rem; margin: 0;">{{ message }}</p>
+                {% endif %}
+              {% endfor %}
+            </div>
+          {% endif %}
+        {% endwith %}
+
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>
+            <a class="links" href="https://maps.app.goo.gl/7PbRcHTXPvoGTSyq7" target="_blank">Ubicación</a> | 
+            <a class="links" href="tel:+5492611234567">Contáctanos</a>
+        </p>
+        <p>© 2026 Mi Comercio - Todos los derechos reservados</p>
+    </footer>
+
+    {% block scripts %}{% endblock %}
+</body>
+</html>

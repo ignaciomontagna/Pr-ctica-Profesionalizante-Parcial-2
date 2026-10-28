@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="header-nav-extra" style="background: #05435e; padding-bottom: 15px; text-align: center;">
+    <nav style="display: flex; justify-content: center; align-items: center; gap: 12px; flex-wrap: wrap;">
+        <input type="text" id="input-buscador" placeholder="Buscar productos...">
+
+        <div class="filtros-container">
+            <button id="btn-filtros">⚙️ Filtros <span id="contador-filtros" hidden>0</span></button>
+            <div id="panel-filtros" class="oculto">
+                <h3>Filtrar productos</h3>
+                <div class="filtros-grid">
+                    <label>Categoría
+                        <select id="filtro-categoria"></select>
+                    </label>
+
+                    <label>Marca
+                        <select id="filtro-marca"></select>
+                    </label>
+
+                    <label>Precio mínimo
+                        <input type="number" id="filtro-precio-min" min="0" step="1000" placeholder="$ 0">
+                    </label>
+
+                    <label>Precio máximo
+                        <input type="number" id="filtro-precio-max" min="0" step="1000" placeholder="Sin límite">
+                    </label>
+
+                    <label class="filtro-check">
+                        <input type="checkbox" id="filtro-stock"> Solo con stock
+                    </label>
+
+                    <button type="button" id="btn-limpiar-filtros">Limpiar filtros</button>
+                </div>
+                <p id="resultado-filtros"></p>
+                <button type="button" id="btn-cerrar-filtros">Cerrar</button>
+            </div>
+        </div>
+
+        <div class="carrito-container">
+            <button id="btn-carrito">🛒 Carrito (<span id="contador-carrito">0</span>)</button>
+            <div id="modal-carrito" class="oculto">
+                <h3>Tu Carrito</h3>
+                <ul id="lista-carrito"></ul>
+                <p>Total: <span id="total-precio">$0</span></p>
+                <p id="aviso-carrito"></p>
+                <button id="btn-comprar">Finalizar compra</button>
+                <button id="btn-vaciar">Vaciar</button>
+                <button id="btn-cerrar-carrito">Cerrar</button>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<section class="bienvenida">
+    <h2>Bienvenido a nuestra humilde tienda</h2>
+    <p>Encontrá los mejores productos al mejor precio.</p>
+</section>
+
+<section class="slider">
+    <input type="radio" name="slide" id="s1" checked>
+    <input type="radio" name="slide" id="s2">
+    <input type="radio" name="slide" id="s3">
+    <input type="radio" name="slide" id="s4">
+    <input type="radio" name="slide" id="s5">
+
+    <div class="slides">
+        <div class="slide slide1"><img src="{{ url_for('static', filename='monitor curvo qhd gamer.webp') }}" alt="Monitor Curvo QHD Gamer"></div>
+        <div class="slide slide2"><img src="{{ url_for('static', filename='gabinete.webp') }}" alt="Gabinete"></div>
+        <div class="slide slide3"><img src="{{ url_for('static', filename='monitor portatil gadnid.webp') }}" alt="Monitor Portátil Gadnic"></div>
+        <div class="slide slide4"><img src="{{ url_for('static', filename='grafica.webp') }}" alt="Placa de Video"></div>
+        <div class="slide slide5"><img src="{{ url_for('static', filename='fuente.webp') }}" alt="Fuente ATX"></div>
+    </div>
+</section>
+
+<section id="productos">
+    <h2>Productos Destacados</h2>
+    <div class="contenedor-productos"></div>
+</section>
+
+<section id="productos2">
+    <h2>Gabinetes y Placas de video</h2>
+    <div class="contenedor-productos"></div>
+</section>
+
+<section id="productos3">
+    <h2>Monitores</h2>
+    <div class="contenedor-productos"></div>
+</section>
+
+<section id="productos4">
+    <h2>Fuentes de Poder</h2>
+    <div class="contenedor-productos"></div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/pag_pp.js') }}"></script>
+{% endblock %}

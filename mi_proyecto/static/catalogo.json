@@ -1,0 +1,184 @@
+{
+  "productos": [
+    {
+      "id": "mon-gadnic-curvo-qhd",
+      "nombre": "Monitor Gamer Curvo Gadnic QHD 180Hz R1500 Freesync Gsync RGB",
+      "categoria": "monitor",
+      "marca": "Gadnic",
+      "precio": 509999,
+      "stock": 8,
+      "imagen": "/static/monitor curvo gadnid.webp",
+      "secciones": ["productos", "productos3"]
+    },
+    {
+      "id": "mon-xmicro-portatil-156",
+      "nombre": "Monitor Portátil 15.6 X-micro Full HD IPS 60Hz X16F-PTB156E",
+      "categoria": "monitor",
+      "marca": "X-micro",
+      "precio": 135499,
+      "stock": 12,
+      "imagen": "/static/monitor curvo qhd gamer.webp",
+      "secciones": ["productos", "productos3"]
+    },
+    {
+      "id": "mon-gadnic-portatil-156",
+      "nombre": "Monitor Portátil Gadnic 156 15.6 Full HD USB-C Mini-HDMI",
+      "categoria": "monitor",
+      "marca": "Gadnic",
+      "precio": 177849,
+      "stock": 10,
+      "imagen": "/static/monitor portatil gadnid.webp",
+      "secciones": ["productos", "productos3"]
+    },
+    {
+      "id": "mon-gadnic-24",
+      "nombre": "Monitor Gadnic 24\" Led Pantalla Full HD 75hz HDMI VGA Montaje VESA Para PC Negro",
+      "categoria": "monitor",
+      "marca": "Gadnic",
+      "precio": 141849,
+      "stock": 15,
+      "imagen": "/static/monitor gadnid.webp",
+      "secciones": ["productos3"]
+    },
+    {
+      "id": "mon-xiaomi-g34wqi",
+      "nombre": "Monitor gamer curvo Xiaomi Gaming G34WQi LCD negro",
+      "categoria": "monitor",
+      "marca": "Xiaomi",
+      "precio": 599999,
+      "stock": 5,
+      "imagen": "/static/monitor curvo xiaomi.webp",
+      "secciones": ["productos3"]
+    },
+    {
+      "id": "mon-xiaomi-a27qi",
+      "nombre": "Monitor Xiaomi A27qi, Frecuencia Del Panel (máx.) 120hz, 27 Pulgadas, Resolución 2560 X 1440 Qhd, Color Negro 2026",
+      "categoria": "monitor",
+      "marca": "Xiaomi",
+      "precio": 309999,
+      "stock": 7,
+      "imagen": "/static/monitor xiaomi a27.webp",
+      "secciones": ["productos3"]
+    },
+    {
+      "id": "gpu-msi-trio-rtx50",
+      "nombre": "Placa de Video MSI Gaming Trio GeForce RTX 50 Series 16GB",
+      "categoria": "placa-de-video",
+      "marca": "MSI",
+      "precio": 2999999,
+      "stock": 2,
+      "imagen": "/static/grafica.webp",
+      "secciones": ["productos", "productos2"]
+    },
+    {
+      "id": "gpu-asrock-rx7600",
+      "nombre": "Tarjeta de Video ASRock Radeon RX 7600 Challenger OC 8GB GDDR6 PCIe 4.0 HDMI 2.1",
+      "categoria": "placa-de-video",
+      "marca": "ASRock",
+      "precio": 551099,
+      "stock": 4,
+      "imagen": "/static/placa de video asrock.webp",
+      "secciones": ["productos2"]
+    },
+    {
+      "id": "gpu-asus-rx9060xt",
+      "nombre": "Placa De Video Asus Prime Radeon Rx 9060 Xt Oc Edition 16gb Gddr6 128-bit Pci-e 5.0",
+      "categoria": "placa-de-video",
+      "marca": "Asus",
+      "precio": 999999,
+      "stock": 3,
+      "imagen": "/static/placa de video prime.webp",
+      "secciones": ["productos2"]
+    },
+    {
+      "id": "gab-sentey-h12",
+      "nombre": "Gabinete Sentey H12 Black Mid Tower para Micro ATX e ITX con 4 Ventiladores FRGB",
+      "categoria": "gabinete",
+      "marca": "Sentey",
+      "precio": 51999,
+      "stock": 20,
+      "imagen": "/static/gabinete.webp",
+      "secciones": ["productos", "productos2"]
+    },
+    {
+      "id": "gab-solarmax-5920",
+      "nombre": "Gabinete Solarmax 5920 Blanco 6 Fan Rgb Vidrio Templado",
+      "categoria": "gabinete",
+      "marca": "Solarmax",
+      "precio": 118737,
+      "stock": 9,
+      "imagen": "/static/gabinete solarmax.webp",
+      "secciones": ["productos2"]
+    },
+    {
+      "id": "gab-silverstone-fara-r1",
+      "nombre": "Gabinete Silverstone Fara R1 V2 Mesh Frontal Blanco",
+      "categoria": "gabinete",
+      "marca": "Silverstone",
+      "precio": 56140,
+      "stock": 11,
+      "imagen": "/static/gabinete silverstone.webp",
+      "secciones": ["productos2"]
+    },
+    {
+      "id": "fte-cougar-ges850",
+      "nombre": "Fuente ATX Cougar GES 850 850W 80 Plus Gold ATX 3.1 PCIe 5.1",
+      "categoria": "fuente",
+      "marca": "Cougar",
+      "precio": 124999,
+      "stock": 6,
+      "imagen": "/static/fuente.webp",
+      "secciones": ["productos", "productos4"]
+    },
+    {
+      "id": "fte-msi-mag-a650bn",
+      "nombre": "Fuente de alimentación para PC MSI MAG A650BN 650W negra",
+      "categoria": "fuente",
+      "marca": "MSI",
+      "precio": 98349,
+      "stock": 14,
+      "imagen": "/static/fuente msi.webp",
+      "secciones": ["productos4"]
+    },
+    {
+      "id": "fte-lnz-fb550",
+      "nombre": "Fuente Alimentación LNZ 550W FB550-LX ATX Negro",
+      "categoria": "fuente",
+      "marca": "LNZ",
+      "precio": 29990,
+      "stock": 25,
+      "imagen": "/static/fuente lnz.webp",
+      "secciones": ["productos4"]
+    },
+    {
+      "id": "fte-sentey-1050",
+      "nombre": "Fuente de Poder Sentey 1050W 80 Plus Gold Modular Para PC Gamer",
+      "categoria": "fuente",
+      "marca": "Sentey",
+      "precio": 169499,
+      "stock": 5,
+      "imagen": "/static/fuente sentey.webp",
+      "secciones": ["productos4"]
+    },
+    {
+      "id": "fte-asus-rog-strix-1000",
+      "nombre": "Fuente De Poder Asus Rog Strix 1000w Platinum Cybernetics A+ Negro",
+      "categoria": "fuente",
+      "marca": "Asus",
+      "precio": 399999,
+      "stock": 3,
+      "imagen": "/static/fuente asus.webp",
+      "secciones": ["productos4"]
+    },
+    {
+      "id": "fte-gigabyte-650",
+      "nombre": "Fuente De Poder Gigabyte 650w 80 Plus Silver White Color Negro",
+      "categoria": "fuente",
+      "marca": "Gigabyte",
+      "precio": 106485,
+      "stock": 8,
+      "imagen": "/static/fuente gigabyte.webp",
+      "secciones": ["productos4"]
+    }
+  ]
+}

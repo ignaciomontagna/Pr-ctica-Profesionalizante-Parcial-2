@@ -1,0 +1,7 @@
+Flask
+Flask-WTF
+Flask-Limiter
+pymysql
+cryptography
+Werkzeug
+captcha
